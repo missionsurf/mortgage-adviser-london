@@ -6,7 +6,7 @@ import RiskWarning from "@/components/RiskWarning";
 export const metadata: Metadata = {
   title: "Independent Mortgage Adviser London | CeMAP Qualified Expert",
   description:
-    "Independent mortgage adviser in London. Whole-of-market advice from Roger Iyamu CeMAP, FCA regulated. 90+ lenders, 15+ years experience. Free initial advice.",
+    "Independent mortgage adviser in London. Whole-of-market advice from Roger Cooper CeMAP, FCA regulated. 90+ lenders, 15+ years experience. Free initial advice.",
   alternates: { canonical: "https://www.mortgageadviser.london" },
   openGraph: {
     title: "Independent Mortgage Adviser London | MA London",
@@ -162,7 +162,7 @@ export default function HomePage() {
             Trusted, Whole-of-Market Advice from a CeMAP Qualified Expert
           </p>
           <p className="text-green-200 max-w-3xl mx-auto mb-8 text-lg">
-            Roger Iyamu CeMAP has been providing independent mortgage advice to London buyers for 15+ years.
+            Roger Cooper CeMAP has been providing independent mortgage advice to London buyers for 15+ years.
             With access to 90+ lenders and deep knowledge of London&apos;s unique property market, we find the mortgage
             that is right for your circumstances — not just the nearest available product.
           </p>
@@ -214,7 +214,7 @@ export default function HomePage() {
             are high, and the wrong mortgage decision can have significant financial consequences.
           </p>
           <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-            As an independent whole-of-market adviser, Roger Iyamu has no commercial tie to any single lender
+            As an independent whole-of-market adviser, Roger Cooper has no commercial tie to any single lender
             or panel. This means his recommendation is driven entirely by what is best for you — not by
             commission arrangements, referral incentives, or restricted panels. With access to over 90 lenders
             including high street banks, specialist lenders, and private banks, the advice you receive is

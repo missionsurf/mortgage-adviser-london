@@ -84,7 +84,7 @@ London buyers face unique challenges that general mortgage advisers in other par
 - **New-build purchases** with developer timelines that affect mortgage validity
 - **Leasehold complexity** — lease lengths, service charges, and building safety certificates
 
-An adviser who works primarily with London buyers understands these nuances. When Roger Iyamu advises a client buying in London, he draws on over 15 years of experience in this specific market — and access to 90+ lenders to find the right solution.
+An adviser who works primarily with London buyers understands these nuances. When Roger Cooper advises a client buying in London, he draws on over 15 years of experience in this specific market — and access to 90+ lenders to find the right solution.
 
 Your home may be repossessed if you do not keep up repayments on your mortgage.
     `,
@@ -158,7 +158,7 @@ Some lenders offer specific professional mortgage products — enhanced income m
 
 For London professionals, the value of independent advice is straightforward: a restricted adviser with access to 20 lenders may find a product. A whole-of-market adviser with access to 90+ lenders will find the right product for your specific income structure, property type, and circumstances.
 
-Roger Iyamu has spent 15+ years advising London professionals across banking, law, medicine, technology, and media. The combination of CeMAP qualification, FCA regulation, and deep market experience means advice that genuinely matches your situation.
+Roger Cooper has spent 15+ years advising London professionals across banking, law, medicine, technology, and media. The combination of CeMAP qualification, FCA regulation, and deep market experience means advice that genuinely matches your situation.
 
 Your home may be repossessed if you do not keep up repayments on your mortgage.
     `,

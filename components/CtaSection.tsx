@@ -7,7 +7,7 @@ interface CtaSectionProps {
 
 export default function CtaSection({
   heading = "Ready to speak to a London mortgage adviser?",
-  subtext = "Get free initial advice from Roger Iyamu, CeMAP Qualified, with access to 90+ lenders.",
+  subtext = "Get free initial advice from Roger Cooper, CeMAP Qualified, with access to 90+ lenders.",
 }: CtaSectionProps) {
   return (
     <section className="bg-green-800 text-white py-16 px-4">

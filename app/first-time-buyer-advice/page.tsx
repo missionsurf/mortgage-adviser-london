@@ -6,7 +6,7 @@ import RiskWarning from "@/components/RiskWarning";
 export const metadata: Metadata = {
   title: "First Time Buyer Mortgage Advice London | CeMAP Qualified Adviser",
   description:
-    "Expert first time buyer mortgage advice in London. Deposits, Help to Buy alternatives, stamp duty, and step-by-step guidance from Roger Iyamu CeMAP. Free initial advice.",
+    "Expert first time buyer mortgage advice in London. Deposits, Help to Buy alternatives, stamp duty, and step-by-step guidance from Roger Cooper CeMAP. Free initial advice.",
   alternates: { canonical: "https://www.mortgageadviser.london/first-time-buyer-advice" },
 };
 
@@ -286,7 +286,7 @@ export default function FirstTimeBuyerPage() {
         <RiskWarning />
       </div>
 
-      <CtaSection heading="Ready to buy your first home in London?" subtext="Free initial advice from Roger Iyamu CeMAP — independent, whole-of-market, FCA regulated." />
+      <CtaSection heading="Ready to buy your first home in London?" subtext="Free initial advice from Roger Cooper CeMAP — independent, whole-of-market, FCA regulated." />
     </>
   );
 }

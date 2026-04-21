@@ -96,7 +96,7 @@ export default function AreasPage() {
         </div>
       </section>
 
-      <CtaSection heading="Need mortgage advice for your area?" subtext="Independent whole-of-market advice from Roger Iyamu CeMAP — covering London and the Home Counties." />
+      <CtaSection heading="Need mortgage advice for your area?" subtext="Independent whole-of-market advice from Roger Cooper CeMAP — covering London and the Home Counties." />
     </>
   );
 }

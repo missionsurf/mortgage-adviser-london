@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-gold-400">MA</span> London
             </div>
             <p className="text-sm leading-relaxed mb-3">
-              Independent whole-of-market mortgage advice from Roger Iyamu, CeMAP Qualified, serving London and the Home Counties.
+              Independent whole-of-market mortgage advice from Roger Cooper, CeMAP Qualified, serving London and the Home Counties.
             </p>
             <p className="text-sm font-medium text-gold-400">0844 884 9748</p>
             <a href="mailto:admin@mortgageinternational.co.uk" className="text-sm hover:text-white transition-colors">
@@ -34,7 +34,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3">Information</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-white transition-colors">About Roger Iyamu</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About Roger Cooper</Link></li>
               <li><Link href="/areas" className="hover:text-white transition-colors">London Areas</Link></li>
               <li><Link href="/blog" className="hover:text-white transition-colors">Mortgage Advice Blog</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>

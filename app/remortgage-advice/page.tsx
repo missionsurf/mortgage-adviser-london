@@ -6,7 +6,7 @@ import RiskWarning from "@/components/RiskWarning";
 export const metadata: Metadata = {
   title: "Remortgage Advice London | Independent Whole-of-Market Adviser",
   description:
-    "Independent remortgage advice in London. Coming off a fixed rate? We compare 90+ lenders to find the right remortgage for your circumstances. Free advice from Roger Iyamu CeMAP.",
+    "Independent remortgage advice in London. Coming off a fixed rate? We compare 90+ lenders to find the right remortgage for your circumstances. Free advice from Roger Cooper CeMAP.",
   alternates: { canonical: "https://www.mortgageadviser.london/remortgage-advice" },
 };
 
@@ -220,7 +220,7 @@ export default function RemortgagePage() {
         <RiskWarning />
       </div>
 
-      <CtaSection heading="Ready to find the right remortgage deal?" subtext="Free advice from Roger Iyamu CeMAP — comparing 90+ lenders to find the right rate for your circumstances." />
+      <CtaSection heading="Ready to find the right remortgage deal?" subtext="Free advice from Roger Cooper CeMAP — comparing 90+ lenders to find the right rate for your circumstances." />
     </>
   );
 }

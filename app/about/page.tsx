@@ -4,16 +4,16 @@ import Link from "next/link";
 import CtaSection from "@/components/CtaSection";
 
 export const metadata: Metadata = {
-  title: "About Roger Iyamu — CeMAP Qualified Mortgage Adviser London",
+  title: "About Roger Cooper — CeMAP Qualified Mortgage Adviser London",
   description:
-    "Roger Iyamu is a CeMAP qualified independent mortgage adviser based in London with 15+ years experience. FCA regulated, whole-of-market, genuinely independent.",
+    "Roger Cooper is a CeMAP qualified independent mortgage adviser based in London with 15+ years experience. FCA regulated, whole-of-market, genuinely independent.",
   alternates: { canonical: "https://www.mortgageadviser.london/about" },
 };
 
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Roger Iyamu",
+  name: "Roger Cooper",
   jobTitle: "Independent Mortgage Adviser",
   description: "CeMAP qualified independent mortgage adviser based in London with over 15 years of experience advising buyers across Greater London and the Home Counties.",
   hasCredential: {
@@ -72,7 +72,7 @@ export default function AboutPage() {
           <nav className="text-green-300 text-sm mb-4">
             <Link href="/" className="hover:text-white">Home</Link> › About
           </nav>
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">About Roger Iyamu</h1>
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">About Roger Cooper</h1>
           <p className="text-green-100 text-xl">
             CeMAP Qualified Independent Mortgage Adviser — London
           </p>
@@ -87,7 +87,7 @@ export default function AboutPage() {
               <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-lg mb-6">
                 <Image
                   src="/roger-iyamu.JPG"
-                  alt="Roger Iyamu — Independent Mortgage Adviser London"
+                  alt="Roger Cooper — Independent Mortgage Adviser London"
                   fill
                   className="object-cover object-top"
                   priority
@@ -211,7 +211,7 @@ export default function AboutPage() {
             You deserve an adviser who genuinely understands it, has access to the full market, and recommends
             what is right for you — not what is convenient for them.&rdquo;
           </p>
-          <p className="font-semibold text-green-800 mt-4">— Roger Iyamu, CeMAP</p>
+          <p className="font-semibold text-green-800 mt-4">— Roger Cooper, CeMAP</p>
         </div>
       </section>
 

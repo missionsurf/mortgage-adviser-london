@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact a Mortgage Adviser in London | Free Initial Advice",
   description:
-    "Contact Roger Iyamu, independent mortgage adviser in London. Free initial advice. Call 0844 884 9748 or email admin@mortgageinternational.co.uk.",
+    "Contact Roger Cooper, independent mortgage adviser in London. Free initial advice. Call 0844 884 9748 or email admin@mortgageinternational.co.uk.",
   alternates: { canonical: "https://www.mortgageadviser.london/contact" },
 };
 

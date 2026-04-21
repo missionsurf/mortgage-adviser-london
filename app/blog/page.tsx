@@ -4,11 +4,11 @@ import { blogPosts } from '@/lib/blog'
 
 export const metadata: Metadata = {
   title: 'Mortgage Advice Blog | Expert Guides for London Buyers',
-  description: 'Expert mortgage advice articles for London buyers. Guides on first time buyer mortgages, remortgage advice, buy to let, self-employed mortgages and more from CeMAP qualified adviser Roger Iyamu.',
+  description: 'Expert mortgage advice articles for London buyers. Guides on first time buyer mortgages, remortgage advice, buy to let, self-employed mortgages and more from CeMAP qualified adviser Roger Cooper.',
   alternates: { canonical: 'https://www.mortgageadviser.london/blog' },
   openGraph: {
     title: 'Mortgage Advice Blog | MA London',
-    description: 'Expert mortgage advice guides for London buyers from CeMAP qualified adviser Roger Iyamu.',
+    description: 'Expert mortgage advice guides for London buyers from CeMAP qualified adviser Roger Cooper.',
     url: 'https://www.mortgageadviser.london/blog',
   },
 }
@@ -29,7 +29,7 @@ export default function BlogPage() {
             Mortgage Advice Blog
           </h1>
           <p className="text-xl text-green-100 max-w-2xl">
-            Plain English guides from Roger Iyamu, CeMAP qualified mortgage adviser. Written for London buyers, remortgagors and landlords.
+            Plain English guides from Roger Cooper, CeMAP qualified mortgage adviser. Written for London buyers, remortgagors and landlords.
           </p>
         </div>
       </section>
@@ -56,8 +56,8 @@ export default function BlogPage() {
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <img src="/roger-iyamu.JPG" alt="Roger Iyamu" className="w-7 h-7 rounded-full object-cover object-top" />
-                    <span className="text-xs text-slate-500">Roger Iyamu, CeMAP</span>
+                    <img src="/roger-iyamu.JPG" alt="Roger Cooper" className="w-7 h-7 rounded-full object-cover object-top" />
+                    <span className="text-xs text-slate-500">Roger Cooper, CeMAP</span>
                   </div>
                   <span className="text-gold-500 text-xs font-semibold group-hover:gap-2 transition-all flex items-center gap-1">
                     Read →

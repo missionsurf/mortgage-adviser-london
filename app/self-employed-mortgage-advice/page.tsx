@@ -6,7 +6,7 @@ import RiskWarning from "@/components/RiskWarning";
 export const metadata: Metadata = {
   title: "Self Employed Mortgage Adviser London | CeMAP Qualified Expert",
   description:
-    "Independent mortgage adviser specialising in self-employed buyers in London. SA302s, day rate contractors, limited company directors. Free advice from Roger Iyamu CeMAP.",
+    "Independent mortgage adviser specialising in self-employed buyers in London. SA302s, day rate contractors, limited company directors. Free advice from Roger Cooper CeMAP.",
   alternates: { canonical: "https://www.mortgageadviser.london/self-employed-mortgage-advice" },
 };
 
@@ -232,7 +232,7 @@ export default function SelfEmployedPage() {
         <RiskWarning />
       </div>
 
-      <CtaSection heading="Self-employed and need mortgage advice in London?" subtext="Roger Iyamu CeMAP specialises in complex self-employed income. Free initial advice, whole-of-market access." />
+      <CtaSection heading="Self-employed and need mortgage advice in London?" subtext="Roger Cooper CeMAP specialises in complex self-employed income. Free initial advice, whole-of-market access." />
     </>
   );
 }

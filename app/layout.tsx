@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | MA London — Mortgage Adviser",
   },
   description:
-    "Independent mortgage adviser in London. CeMAP qualified, FCA regulated, whole-of-market advice from Roger Iyamu. 90+ lenders, 15+ years experience.",
+    "Independent mortgage adviser in London. CeMAP qualified, FCA regulated, whole-of-market advice from Roger Cooper. 90+ lenders, 15+ years experience.",
   metadataBase: new URL("https://www.mortgageadviser.london"),
   openGraph: {
     siteName: "Mortgage Adviser London",
@@ -65,7 +65,7 @@ const localBusinessSchema = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Roger Iyamu",
+  name: "Roger Cooper",
   jobTitle: "Independent Mortgage Adviser",
   hasCredential: {
     "@type": "EducationalOccupationalCredential",

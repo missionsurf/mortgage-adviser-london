@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `https://www.mortgageadviser.london/blog/${post.slug}`,
       type: 'article',
       publishedTime: post.date,
-      authors: ['Roger Iyamu'],
+      authors: ['Roger Cooper'],
     },
   }
 }
@@ -39,7 +39,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     datePublished: post.date,
     author: {
       '@type': 'Person',
-      name: 'Roger Iyamu',
+      name: 'Roger Cooper',
       jobTitle: 'CeMAP Qualified Mortgage Adviser',
       url: 'https://www.mortgageadviser.london/about',
     },
@@ -93,9 +93,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </span>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-5">{post.title}</h1>
           <div className="flex items-center gap-4">
-            <img src="/roger-iyamu.JPG" alt="Roger Iyamu" className="w-10 h-10 rounded-full object-cover object-top border-2 border-white/30" />
+            <img src="/roger-iyamu.JPG" alt="Roger Cooper" className="w-10 h-10 rounded-full object-cover object-top border-2 border-white/30" />
             <div>
-              <p className="font-semibold text-sm">Roger Iyamu, CeMAP</p>
+              <p className="font-semibold text-sm">Roger Cooper, CeMAP</p>
               <p className="text-green-300 text-xs">{formattedDate} · {post.readTime}</p>
             </div>
           </div>
@@ -113,9 +113,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           {/* Author bio */}
           <div className="mt-10 bg-slate-50 border border-slate-200 rounded-2xl p-6">
             <div className="flex items-start gap-4">
-              <img src="/roger-iyamu.JPG" alt="Roger Iyamu" className="w-14 h-14 rounded-full object-cover object-top flex-shrink-0 border-2 border-white shadow-sm" />
+              <img src="/roger-iyamu.JPG" alt="Roger Cooper" className="w-14 h-14 rounded-full object-cover object-top flex-shrink-0 border-2 border-white shadow-sm" />
               <div>
-                <p className="font-bold text-green-800">Roger Iyamu</p>
+                <p className="font-bold text-green-800">Roger Cooper</p>
                 <p className="text-gold-600 text-xs font-semibold mt-0.5">CeMAP Qualified Mortgage Adviser | FCA Regulated</p>
                 <p className="text-slate-600 text-sm leading-relaxed mt-2">
                   Roger has over 15 years of experience as an independent mortgage adviser in London. CeMAP qualified and FCA regulated, he specialises in complex cases including self-employed applicants, portfolio landlords, expat mortgages and high-value London purchases.

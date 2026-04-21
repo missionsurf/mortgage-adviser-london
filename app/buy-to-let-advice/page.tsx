@@ -6,7 +6,7 @@ import RiskWarning from "@/components/RiskWarning";
 export const metadata: Metadata = {
   title: "Buy to Let Mortgage Advice London | Investment Property Adviser",
   description:
-    "Expert buy to let mortgage advice in London. ICR calculations, limited company structure, portfolio landlord rules. Free advice from Roger Iyamu CeMAP, FCA regulated.",
+    "Expert buy to let mortgage advice in London. ICR calculations, limited company structure, portfolio landlord rules. Free advice from Roger Cooper CeMAP, FCA regulated.",
   alternates: { canonical: "https://www.mortgageadviser.london/buy-to-let-advice" },
 };
 
@@ -241,7 +241,7 @@ export default function BuyToLetPage() {
         <RiskWarning btl={true} />
       </div>
 
-      <CtaSection heading="Need buy to let mortgage advice in London?" subtext="Free initial advice from Roger Iyamu CeMAP — ICR calculations, structure advice, and 90+ lender access." />
+      <CtaSection heading="Need buy to let mortgage advice in London?" subtext="Free initial advice from Roger Cooper CeMAP — ICR calculations, structure advice, and 90+ lender access." />
     </>
   );
 }
