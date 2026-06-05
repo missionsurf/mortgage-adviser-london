@@ -37,7 +37,7 @@ Sent from the Lead Form on mortgageadviser.london
           Authorization: `Bearer ${RESEND_API_KEY}`,
         },
         body: JSON.stringify({
-          from: "notifications@mortgageadviser.london",
+          from: "notifications@mortgageinternational.co.uk",
           to: "admin@mortgageinternational.co.uk",
           subject: `New Mortgage Enquiry — ${mortgageType} — ${name}`,
           text: emailBody,
