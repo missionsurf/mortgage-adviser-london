@@ -6,7 +6,14 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/'],
+        disallow: [
+          '/api/',
+          '/wp-admin/',
+          '/wp-includes/',
+          '/wp-content/',
+          '/wp-login.php',
+          '/xmlrpc.php',
+        ],
       },
     ],
     sitemap: 'https://www.mortgageadviser.london/sitemap.xml',

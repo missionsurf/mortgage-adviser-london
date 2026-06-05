@@ -4,10 +4,15 @@ import CtaSection from "@/components/CtaSection";
 import RiskWarning from "@/components/RiskWarning";
 
 export const metadata: Metadata = {
-  title: "Remortgage Advice London | Independent Whole-of-Market Adviser",
+  title: "Remortgage Adviser London 2026 | Independent Whole-of-Market Advice",
   description:
-    "Independent remortgage advice in London. Coming off a fixed rate? We compare 90+ lenders to find the right remortgage for your circumstances. Free advice from Roger Cooper CeMAP.",
+    "Remortgage adviser in London 2026. Coming off a fixed rate? Roger Cooper CeMAP compares 90+ lenders to find your best deal. Fix vs tracker explained. Free initial advice.",
   alternates: { canonical: "https://www.mortgageadviser.london/remortgage-advice" },
+  openGraph: {
+    title: "Remortgage Adviser London 2026 | Roger Cooper CeMAP",
+    description: "Independent remortgage advice in London — whole-of-market, 90+ lenders, FCA regulated. Free initial advice from Roger Cooper CeMAP.",
+    url: "https://www.mortgageadviser.london/remortgage-advice",
+  },
 };
 
 const faqSchema = {
@@ -195,6 +200,56 @@ export default function RemortgagePage() {
         </div>
       </section>
 
+      {/* What you need to know */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-800 mb-6">What You Need to Know About Remortgaging in London 2026</h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              The remortgage market in 2026 presents genuine opportunities for London homeowners. After the rate
+              volatility of 2022–2024, the market has stabilised and lenders are competing actively for remortgage
+              business. For borrowers coming to the end of fixed-rate deals arranged during the higher-rate period,
+              there are often better deals available — though the improvement depends heavily on your current LTV,
+              income, and the specific products you locked in.
+            </p>
+            <p>
+              One of the most valuable aspects of independent remortgage advice is LTV reassessment. London property
+              values have generally appreciated over the last five years, meaning many homeowners who fixed at 75–80%
+              LTV are now sitting at 60–70% LTV. Moving to a lower LTV band unlocks significantly better rates — the
+              rate differential between 75% LTV and 60% LTV can be 0.3–0.5%, which on a £400,000 mortgage saves
+              £100–£167 per month.
+            </p>
+            <p>
+              If you have built up significant equity in your London property, a remortgage is also an opportunity
+              to release capital — for home improvements, debt consolidation, or other purposes. We model the total
+              cost of any additional borrowing carefully, including the impact on your monthly payment and the total
+              amount repaid over the new deal term, so you can make an informed decision.
+            </p>
+            <p>
+              Product transfers — staying with your existing lender on a new rate — are sometimes appropriate, but
+              they should never be accepted without comparison. Your existing lender has no obligation to offer you
+              a competitive rate, and in most cases a whole-of-market search will identify better value elsewhere.
+              Even if the saving is modest, we provide the comparison so you can make a properly informed choice
+              rather than defaulting to convenience.
+            </p>
+            <p>
+              The decision between two-year and five-year fixed rates remains highly individual. Five-year fixes
+              offer certainty over a longer period and have historically offered slightly better rates during
+              periods of uncertainty. Two-year fixes allow you to reassess sooner. We present both options with
+              full cost modelling and outline the specific circumstances in which each makes sense for your
+              financial position.
+            </p>
+            <p>
+              For London homeowners who have recently experienced changes in income — promotion, job change,
+              becoming self-employed — the remortgage is also an opportunity to reassess affordability with your
+              new income profile. Some lenders will allow increased borrowing at remortgage; others are more
+              conservative. We identify the right lender for your current circumstances rather than working
+              backwards from your existing lender relationship.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
@@ -206,6 +261,9 @@ export default function RemortgagePage() {
               { q: "Can I borrow more money when I remortgage?", a: "Yes — a further advance or equity release can be arranged at the same time as a remortgage. We assess how much additional borrowing is appropriate based on your income and circumstances, and compare the rate across the market for both parts of the loan." },
               { q: "Will I pay an early repayment charge if I remortgage early?", a: "If you remortgage before your fixed or tracker deal ends, your lender may charge an ERC — typically 1–5% of the outstanding loan. We calculate the total cost including the ERC versus the saving from a better rate, and advise on whether it makes financial sense to move early." },
               { q: "How long does a remortgage take in London?", a: "A like-for-like remortgage with a new lender typically takes 4–8 weeks from application to completion. A product transfer with your existing lender can be completed within days. We manage the timeline carefully to ensure you complete before your existing deal ends." },
+              { q: "Is a product transfer with my existing lender ever the right answer?", a: "Sometimes, yes — if your existing lender offers a genuinely competitive rate, a product transfer avoids legal costs and valuation requirements and completes quickly. But it should always be compared against the full market first. We do that comparison and present both options clearly." },
+              { q: "Can I remortgage if my property value has fallen?", a: "Falling property values increase your LTV, which may restrict lender options and rates. In most cases, remortgaging is still possible — lenders assess on current LTV. We identify lenders appropriate to your current LTV and advise on whether remortgaging or a product transfer makes more sense." },
+              { q: "What happens if I do nothing and roll onto the Standard Variable Rate?", a: "Your lender's SVR is typically 1.5–2% above the best available fixed rates in 2026. On a £300,000 mortgage, that difference costs £375–£500 extra per month. Rolling onto SVR for even a few months is expensive. We ensure your new deal is in place before this happens." },
             ].map((faq) => (
               <div key={faq.q} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <h3 className="font-semibold text-green-800 mb-2">{faq.q}</h3>

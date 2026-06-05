@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CtaSection from "@/components/CtaSection";
 import RiskWarning from "@/components/RiskWarning";
+import LeadForm from "@/components/LeadForm";
 
 export const metadata: Metadata = {
   title: "Independent Mortgage Adviser London | CeMAP Qualified Expert",
@@ -150,35 +151,49 @@ export default function HomePage() {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-900 via-green-800 to-green-700 text-white py-20 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-gold-400 font-semibold text-sm uppercase tracking-widest mb-4">
-            Independent · Whole-of-Market · FCA Regulated
-          </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-            Independent Mortgage Adviser in London
-          </h1>
-          <p className="text-xl sm:text-2xl text-green-100 font-medium mb-4">
-            Trusted, Whole-of-Market Advice from a CeMAP Qualified Expert
-          </p>
-          <p className="text-green-200 max-w-3xl mx-auto mb-8 text-lg">
-            Roger Cooper CeMAP has been providing independent mortgage advice to London buyers for 15+ years.
-            With access to 90+ lenders and deep knowledge of London&apos;s unique property market, we find the mortgage
-            that is right for your circumstances — not just the nearest available product.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
-              className="bg-gold-500 hover:bg-gold-400 text-green-900 font-bold px-8 py-4 rounded-md text-lg transition-colors"
-            >
-              Get Free Advice
-            </Link>
-            <a
-              href="tel:08448849748"
-              className="border-2 border-white hover:bg-white hover:text-green-800 font-bold px-8 py-4 rounded-md text-lg transition-colors"
-            >
-              Call 0844 884 9748
-            </a>
+      <section className="bg-gradient-to-br from-green-900 via-green-800 to-green-700 text-white py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left column — headline + copy */}
+            <div>
+              <p className="text-gold-400 font-semibold text-sm uppercase tracking-widest mb-4">
+                Independent · Whole-of-Market · FCA Regulated
+              </p>
+              <h1 className="text-4xl sm:text-5xl font-extrabold mb-5 leading-tight">
+                Independent Mortgage Adviser in London
+              </h1>
+              <p className="text-xl text-green-100 font-medium mb-4">
+                Trusted, Whole-of-Market Advice from a CeMAP Qualified Expert
+              </p>
+              <p className="text-green-200 mb-6 text-lg leading-relaxed">
+                Roger Cooper CeMAP has been providing independent mortgage advice to London buyers for 15+ years.
+                With access to 90+ lenders and deep knowledge of London&apos;s unique property market, we find the mortgage
+                right for your circumstances — not just the nearest available product.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="tel:08448849748"
+                  className="border-2 border-white hover:bg-white hover:text-green-800 font-bold px-6 py-3 rounded-md transition-colors text-center"
+                >
+                  Call 0844 884 9748
+                </a>
+                <Link
+                  href="/contact"
+                  className="text-green-200 hover:text-white font-medium px-6 py-3 rounded-md transition-colors text-center underline underline-offset-2"
+                >
+                  Or use the contact page
+                </Link>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3 text-sm">
+                {["✓ Free Initial Advice", "✓ 90+ Lenders", "✓ FCA Regulated", "✓ 15+ Years Experience"].map((b) => (
+                  <span key={b} className="text-gold-400 font-medium">{b}</span>
+                ))}
+              </div>
+            </div>
+            {/* Right column — lead form */}
+            <div>
+              <LeadForm />
+            </div>
           </div>
         </div>
       </section>

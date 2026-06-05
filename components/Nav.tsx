@@ -14,13 +14,14 @@ export default function Nav() {
             <img src="/logo.png" alt="Mortgage Adviser London" className="h-10 w-auto bg-white rounded-md px-1.5 py-0.5" />
           </Link>
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium">
-            <Link href="/" className="hover:text-gold-400 transition-colors">Home</Link>
+          <div className="hidden md:flex items-center gap-5 text-sm font-medium">
             <Link href="/#services" className="hover:text-gold-400 transition-colors">Services</Link>
             <Link href="/areas" className="hover:text-gold-400 transition-colors">Areas</Link>
             <Link href="/about" className="hover:text-gold-400 transition-colors">About</Link>
             <Link href="/blog" className="hover:text-gold-400 transition-colors">Blog</Link>
-            <Link href="/contact" className="hover:text-gold-400 transition-colors">Contact</Link>
+            <a href="tel:08448849748" className="text-gold-400 hover:text-gold-300 font-semibold transition-colors">
+              0844 884 9748
+            </a>
             <Link
               href="/contact"
               className="bg-gold-500 hover:bg-gold-600 text-green-900 font-semibold px-4 py-2 rounded-md transition-colors"

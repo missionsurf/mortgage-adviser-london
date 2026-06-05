@@ -28,15 +28,13 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Mortgage Adviser London — Mortgage International Ltd",
-  image: "https://www.mortgageadviser.london/roger-iyamu.JPG",
-  url: "https://www.mortgageadviser.london",
-  telephone: "+44-844-884-9748",
-  email: "admin@mortgageinternational.co.uk",
+  name: "Mortgage Adviser London",
+  telephone: "08448849748",
   address: {
     "@type": "PostalAddress",
     streetAddress: "3rd Floor, 207 Regent Street",
     addressLocality: "London",
+    addressRegion: "Greater London",
     postalCode: "W1B 3HH",
     addressCountry: "GB",
   },
@@ -45,6 +43,10 @@ const localBusinessSchema = {
     latitude: 51.5126,
     longitude: -0.1425,
   },
+  areaServed: "Greater London",
+  url: "https://www.mortgageadviser.london",
+  image: "https://www.mortgageadviser.london/logo.png",
+  email: "admin@mortgageinternational.co.uk",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

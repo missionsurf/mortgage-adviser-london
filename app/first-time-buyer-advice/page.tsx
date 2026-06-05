@@ -4,10 +4,15 @@ import CtaSection from "@/components/CtaSection";
 import RiskWarning from "@/components/RiskWarning";
 
 export const metadata: Metadata = {
-  title: "First Time Buyer Mortgage Advice London | CeMAP Qualified Adviser",
+  title: "First Time Buyer Mortgage Adviser London 2026 | Roger Cooper CeMAP",
   description:
-    "Expert first time buyer mortgage advice in London. Deposits, Help to Buy alternatives, stamp duty, and step-by-step guidance from Roger Cooper CeMAP. Free initial advice.",
+    "First time buyer mortgage adviser in London 2026. Deposits, stamp duty, Shared Ownership & step-by-step guidance from Roger Cooper CeMAP. Free whole-of-market advice.",
   alternates: { canonical: "https://www.mortgageadviser.london/first-time-buyer-advice" },
+  openGraph: {
+    title: "First Time Buyer Mortgage Adviser London 2026 | Roger Cooper CeMAP",
+    description: "Free first time buyer mortgage advice from Roger Cooper CeMAP — 90+ lenders, whole-of-market, FCA regulated.",
+    url: "https://www.mortgageadviser.london/first-time-buyer-advice",
+  },
 };
 
 const faqSchema = {
@@ -261,6 +266,57 @@ export default function FirstTimeBuyerPage() {
         </div>
       </section>
 
+      {/* What you need to know */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-800 mb-6">What First Time Buyers Need to Know in 2026</h2>
+          <div className="prose prose-gray max-w-none space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              Buying your first home in London in 2026 is a significant undertaking, but with the right advice it is
+              entirely achievable. The London property market remains competitive — average prices across Greater London
+              sit around £500,000, with more affordable outer boroughs like Barking, Croydon, and Havering offering
+              realistic entry points for first-time buyers saving a 5–10% deposit.
+            </p>
+            <p>
+              The most important first step is understanding your maximum borrowing capacity before you start viewing
+              seriously. Most lenders use an income multiple of 4–4.5x your annual gross income for standard
+              applications. However, some lenders will go to 5x or 5.5x income for certain professions or where the
+              case is particularly strong. As a whole-of-market adviser, Roger Cooper has access to lenders across
+              the full affordability spectrum — identifying the right lender for your income level is part of
+              the advice process.
+            </p>
+            <p>
+              Your credit profile matters significantly. A clean credit history — no missed payments, low credit
+              utilisation, stable address history — gives you access to the widest range of lenders and most
+              competitive rates. If you have adverse credit in your history, some specialist lenders will still
+              consider your application; the terms will reflect the additional risk, but getting a mortgage is
+              often still possible with the right advice.
+            </p>
+            <p>
+              Beyond the deposit, first-time buyers in London should budget for: stamp duty (see the table above),
+              solicitor fees (typically £1,500–£2,500 for a straightforward purchase), a homebuyer survey
+              (£400–£700), mortgage arrangement fees (£0–£2,000 depending on the deal), and removal costs.
+              In total, a realistic budget for purchase costs on a £400,000 property is £8,000–£15,000 above
+              the deposit.
+            </p>
+            <p>
+              The mortgage market in 2026 reflects the gradual normalisation of rates following the inflation
+              surge of 2022–2023. Five-year fixed rates are widely available at competitive levels, and many
+              first-time buyers are choosing the security of a five-year fix while their financial position
+              consolidates. We model the total cost of different fixed terms for your circumstances so you
+              can make an informed choice rather than defaulting to the most-advertised product.
+            </p>
+            <p>
+              Leasehold properties — very common in London, especially flats — require additional due diligence.
+              Short leases (under 80 years) significantly restrict mortgage availability; some lenders will not
+              lend on properties with fewer than 70 years remaining. Service charges and ground rent also affect
+              the lender&apos;s assessment. We flag these issues early in the process so you are not caught out after
+              you have made an offer.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
@@ -272,6 +328,9 @@ export default function FirstTimeBuyerPage() {
               { q: "What is an Agreement in Principle and do I need one?", a: "An Agreement in Principle (AIP) is a statement from a lender that they are likely to offer you a mortgage up to a certain amount, subject to a full application. Estate agents take you more seriously with one, and some require it before viewings. We arrange AIPs quickly — typically within 24 hours." },
               { q: "What government schemes are available for first-time buyers in London in 2026?", a: "Shared Ownership (buy a share, pay subsidised rent on the rest) and First Homes (at least 30% discount on qualifying new-builds for eligible buyers) are the main active schemes. Help to Buy closed in March 2023." },
               { q: "How long does the first-time buyer mortgage process take?", a: "From Agreement in Principle to mortgage offer typically takes 2–6 weeks. Exchange and completion add further time. We manage the process proactively to avoid delays on our side and keep you informed throughout." },
+              { q: "How much can I borrow as a first-time buyer in London?", a: "Most lenders offer 4–4.5x your gross annual income. Some go to 5x or 5.5x for strong applicants or certain professions. As a whole-of-market adviser, we identify which lenders will provide the highest income multiples for your specific situation." },
+              { q: "Can I buy with a 5% deposit in London?", a: "Yes. 95% LTV mortgages are available through the standard market and the government-backed Mortgage Guarantee Scheme. Rates are higher than at lower LTV, and fewer lenders participate. We identify the right lenders and advise whether a 5% deposit is the best approach for your circumstances." },
+              { q: "What is a leasehold property and should I be worried?", a: "Most London flats are leasehold — you own the right to occupy for the lease term. Leases under 80 years restrict lender choice significantly; under 70 years, most high street lenders won't lend at all. We flag leasehold issues before you make an offer so you know what you're committing to." },
             ].map((faq) => (
               <div key={faq.q} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <h3 className="font-semibold text-green-800 mb-2">{faq.q}</h3>

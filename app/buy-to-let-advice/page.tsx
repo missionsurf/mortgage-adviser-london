@@ -4,10 +4,15 @@ import CtaSection from "@/components/CtaSection";
 import RiskWarning from "@/components/RiskWarning";
 
 export const metadata: Metadata = {
-  title: "Buy to Let Mortgage Advice London | Investment Property Adviser",
+  title: "Buy to Let Mortgage Adviser London 2026 | ICR, Ltd Company, Portfolio",
   description:
-    "Expert buy to let mortgage advice in London. ICR calculations, limited company structure, portfolio landlord rules. Free advice from Roger Cooper CeMAP, FCA regulated.",
+    "Buy to let mortgage adviser in London 2026. ICR calculations, personal vs limited company, portfolio landlord rules. Free advice from Roger Cooper CeMAP — 90+ lenders.",
   alternates: { canonical: "https://www.mortgageadviser.london/buy-to-let-advice" },
+  openGraph: {
+    title: "Buy to Let Mortgage Adviser London 2026 | Roger Cooper CeMAP",
+    description: "Specialist buy to let mortgage advice in London — ICR, limited company structures, portfolio landlord rules. Free initial advice.",
+    url: "https://www.mortgageadviser.london/buy-to-let-advice",
+  },
 };
 
 const faqSchema = {
@@ -216,6 +221,80 @@ export default function BuyToLetPage() {
         </div>
       </section>
 
+      {/* How it works */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-800 mb-8">How the Buy to Let Advice Process Works</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { step: "1", title: "ICR modelling before you offer", desc: "We run ICR calculations for any property you're considering — working out your maximum mortgage based on expected rental income, before you commit to a purchase." },
+              { step: "2", title: "Structure advice", desc: "We advise on personal name versus limited company, considering your tax position, long-term plans, and the specific lenders available for each structure." },
+              { step: "3", title: "Market search — BTL-specialist lenders", desc: "We search 90+ lenders including specialist buy to let providers not available direct, comparing rates, fees, ICR calculations, and portfolio-friendliness." },
+              { step: "4", title: "Application and completion", desc: "We submit your application, manage the valuation and legal process, and handle any queries from the underwriter — keeping you updated throughout to completion." },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-4 bg-green-50 rounded-2xl p-6 border border-green-100">
+                <div className="w-10 h-10 rounded-full bg-green-800 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  {item.step}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-green-800 mb-1">{item.title}</h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What you need to know */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-800 mb-6">What You Need to Know About Buy to Let in London 2026</h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              London buy to let remains one of the most nuanced areas of the mortgage market in 2026. The
+              combination of higher property values, lower rental yields relative to other UK cities, and the
+              tax changes introduced through Section 24 means that the economics of London investment property
+              require careful analysis before and throughout the investment.
+            </p>
+            <p>
+              The interest rate environment has improved for buy to let investors since the peak of 2023, but
+              rates remain meaningfully higher than the pre-2022 period. For existing landlords, remortgaging
+              onto a new deal is often the most pressing priority — many who fixed at lower rates are now seeing
+              significant payment increases as their deals expire. We model the impact of rate changes on
+              portfolio profitability as part of our advice.
+            </p>
+            <p>
+              For new investors entering the London market, the choice of property type matters significantly.
+              HMOs (Houses in Multiple Occupation) offer higher gross yields but require licensing and specialist
+              mortgages. Holiday lets in London benefit from different tax treatment but require licensing. Standard
+              residential lets in the Zones 3–4 corridor remain the most straightforward entry point — readily
+              financeable, liquid, and benefiting from consistent tenant demand.
+            </p>
+            <p>
+              The limited company route has become increasingly popular for higher rate taxpayers since the Section
+              24 changes. Special Purpose Vehicles (SPVs) — companies set up specifically to hold property —
+              can now access a wide range of lenders at rates that, while slightly higher than personal name,
+              are competitive within the specialist sector. The payback period on the additional tax advantage
+              versus the higher rate depends on your marginal tax rate and the specific property values involved.
+            </p>
+            <p>
+              If you already own four or more mortgaged buy to let properties, you fall into the &lsquo;portfolio
+              landlord&rsquo; category. Lenders must assess your entire portfolio — not just the new property —
+              against their ICR requirements. This creates complexity but also opportunity: lenders whose portfolio
+              criteria your existing portfolio meets are the ones to target, and we know which they are.
+            </p>
+            <p>
+              Energy Performance Certificate (EPC) requirements are also relevant for London landlords. Current
+              guidance requires rental properties to achieve EPC rating E or above. Proposals to require EPC C by
+              2028 remain under consultation, but landlords acquiring properties with lower EPC ratings should
+              factor in potential improvement costs. Some lenders now offer &lsquo;green&rsquo; buy to let products at
+              preferential rates for properties rated EPC A or B.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
@@ -227,6 +306,9 @@ export default function BuyToLetPage() {
               { q: "What are the portfolio landlord rules for 4+ properties?", a: "If you have four or more mortgaged buy to let properties, lenders must assess your entire portfolio — all properties, all mortgages, all rental income. We help you prepare the required portfolio schedule and identify lenders whose portfolio assessment criteria your portfolio meets." },
               { q: "What deposit do I need for a buy to let mortgage?", a: "Most buy to let lenders require 25% deposit (75% LTV). Some lend at 20% though rates are less competitive. The 25% deposit is standard and gives you the widest range of lender options and most competitive rates." },
               { q: "What are London's best areas for buy to let investment?", a: "For yield, Zones 3-4 and the Elizabeth line corridor — Barking, Stratford, Ilford, Croydon — offer better returns than prime central London. Commuter towns just outside Greater London can deliver even stronger yields. We model ICR calculations for any area you're considering before you commit." },
+              { q: "Can I use rental income from my existing properties to support a new buy to let application?", a: "Yes. For portfolio landlords, rental income from existing properties is considered as part of the overall portfolio assessment. However, lenders apply their ICR requirements across the entire portfolio, so if existing properties have high LTV mortgages or low rental yields, this can affect what you can borrow on a new purchase." },
+              { q: "What is the stamp duty surcharge for buy to let properties?", a: "Additional properties attract a 3% stamp duty surcharge on top of standard rates. On a £400,000 investment property, this means paying stamp duty at 3% on the full amount (£12,000) plus the standard rate on the relevant bands — approximately £22,000 total. We include this in the full cost-of-purchase analysis." },
+              { q: "Can I convert my residential mortgage to a buy to let?", a: "If you wish to let out your residential property, you need either a consent to let from your current lender or to switch to a buy to let mortgage. Most residential mortgages prohibit letting without permission. We advise on the most cost-effective way to make the switch, considering ERC, rates, and timing." },
             ].map((faq) => (
               <div key={faq.q} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <h3 className="font-semibold text-green-800 mb-2">{faq.q}</h3>

@@ -4,10 +4,15 @@ import CtaSection from "@/components/CtaSection";
 import RiskWarning from "@/components/RiskWarning";
 
 export const metadata: Metadata = {
-  title: "Self Employed Mortgage Adviser London | CeMAP Qualified Expert",
+  title: "Self Employed Mortgage Adviser London 2026 | SA302, Contractors, Directors",
   description:
-    "Independent mortgage adviser specialising in self-employed buyers in London. SA302s, day rate contractors, limited company directors. Free advice from Roger Cooper CeMAP.",
+    "Self employed mortgage adviser London 2026. SA302, day rate contractors, limited company directors — Roger Cooper CeMAP presents your income to lenders effectively. Free advice.",
   alternates: { canonical: "https://www.mortgageadviser.london/self-employed-mortgage-advice" },
+  openGraph: {
+    title: "Self Employed Mortgage Adviser London 2026 | Roger Cooper CeMAP",
+    description: "Specialist self-employed mortgage advice in London — SA302, day rate contractors, limited company directors. Free initial advice.",
+    url: "https://www.mortgageadviser.london/self-employed-mortgage-advice",
+  },
 };
 
 const faqSchema = {
@@ -207,6 +212,81 @@ export default function SelfEmployedPage() {
         </div>
       </section>
 
+      {/* How it works */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-800 mb-8">How Self-Employed Mortgage Advice Works</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { step: "1", title: "Income assessment", desc: "We review your accounts, SA302s, and tax returns to understand how your income is structured and identify the most effective way to present it to lenders." },
+              { step: "2", title: "Lender matching", desc: "We identify the lenders whose income assessment criteria are most favourable for your specific situation — sole trader, contractor, or limited company director." },
+              { step: "3", title: "Document preparation", desc: "We provide a tailored checklist and help you prepare your documents correctly. Poorly prepared applications for self-employed borrowers are a common cause of delays and declines." },
+              { step: "4", title: "Application and mortgage offer", desc: "We submit your application with the chosen lender, manage underwriter queries proactively, and ensure your case is presented as strongly as possible through to mortgage offer." },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-4 bg-green-50 rounded-2xl p-6 border border-green-100">
+                <div className="w-10 h-10 rounded-full bg-green-800 text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  {item.step}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-green-800 mb-1">{item.title}</h3>
+                  <p className="text-gray-700 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What you need to know */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-green-800 mb-6">What Self-Employed Borrowers Need to Know in 2026</h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              Self-employment is increasingly common in London — technology, media, finance, and professional
+              services all have large contractor and freelance workforces. The mortgage market has adapted to this
+              reality, and in 2026 a well-presented self-employed case with the right lender is no more difficult
+              than an employed application. The key is matching your income profile to the right lender.
+            </p>
+            <p>
+              The single biggest factor in a successful self-employed mortgage application is income presentation.
+              Different lenders calculate your income in materially different ways, and the difference between the
+              highest and lowest income assessment across the market can run to tens of thousands of pounds in
+              practice. An adviser who understands which lenders apply which criteria — and who actively researches
+              this for your specific case — is significantly more valuable to a self-employed borrower than to
+              someone with straightforward PAYE income.
+            </p>
+            <p>
+              For sole traders and partnerships, lenders typically use net profit from SA302 forms as the basis
+              for income. If your profit has fluctuated between years, some lenders average the last two years
+              while others use the lower of the two. For growing businesses where year two is significantly higher
+              than year one, we identify lenders who will use the most recent year or weight towards it.
+            </p>
+            <p>
+              Limited company directors face the most complex assessment. The standard approach — salary plus
+              dividends drawn — often significantly understates the financial strength of a business owner who
+              retains substantial profit for reinvestment. The more generous lenders will use salary plus net
+              profit, or salary plus share of net profit, giving a materially higher income for mortgage purposes.
+              We know which lenders take these approaches and how to present your accounts to them.
+            </p>
+            <p>
+              Timing can be important for self-employed applications. If your most recent tax year significantly
+              increases your assessable income, it can be worth waiting for that return to be filed before applying
+              — even a few months' wait can make a material difference to your maximum borrowing. Conversely, if
+              you have taken large drawings in recent years that may reduce from this year, earlier action may be
+              advisable. We advise on timing as part of the initial fact-find.
+            </p>
+            <p>
+              Finally, credit profile matters as much for self-employed borrowers as for employed ones. A clean
+              credit history — no late payments, no missed payments, low credit card balances — significantly
+              broadens lender choice. If there is adverse credit in your history, some specialist lenders will
+              still consider your application; the terms will reflect the additional risk, but the mortgage market
+              for self-employed borrowers with imperfect credit is wider than many people assume.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
@@ -218,6 +298,9 @@ export default function SelfEmployedPage() {
               { q: "How are day rate contractors assessed for mortgages?", a: "Day rate contractors can be assessed on projected annual income (rate × 5 × 48 weeks) rather than accounts. A £500/day contractor would have £120,000 annual income recognised — significantly better than accounts showing £60,000 drawn. We identify lenders who use day-rate assessment." },
               { q: "What is an SA302 and where do I get one?", a: "An SA302 is HMRC's tax calculation from your self-assessment return. Download it from your HMRC online account at gov.uk — no need to write to HMRC. You need the last two years, plus Tax Year Overview documents confirming the tax was filed." },
               { q: "As a limited company director, can lenders consider my retained profits?", a: "Some lenders will use the company's net profit before tax as your income rather than just salary and dividends drawn. This is particularly valuable if you retain substantial profit. We identify which lenders take this approach and how to present your accounts most effectively." },
+              { q: "My profits have gone up significantly — will lenders use my latest year?", a: "Some lenders average the last two years; others will use the most recent year if it is higher. We identify which approach gives you the highest assessable income for your specific situation. In some cases, waiting until you have filed a more recent tax return is the right call — we advise on timing as part of the process." },
+              { q: "Does being self-employed affect my mortgage rate?", a: "Not directly — lenders price by LTV and risk profile, not employment type. A self-employed borrower with a clean credit history and a 25%+ deposit will access the same rates as an employed borrower in the same position. The challenge is demonstrating income in a way the lender accepts, which is where specialist advice adds value." },
+              { q: "My accountant has minimised my taxable income — does this hurt my mortgage application?", a: "It can. Aggressive tax efficiency that reduces declared profit also reduces assessable mortgage income. There is a direct trade-off between paying less tax and demonstrating higher income for mortgage purposes. We advise on this tension as part of the initial advice — and identify lenders who are more flexible about how they assess self-employed income." },
             ].map((faq) => (
               <div key={faq.q} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
                 <h3 className="font-semibold text-green-800 mb-2">{faq.q}</h3>

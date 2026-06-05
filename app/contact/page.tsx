@@ -86,21 +86,31 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="bg-gray-100 rounded-xl p-6 border border-gray-200 text-center">
-                <p className="text-gray-500 text-sm mb-2">207 Regent Street, London W1B 3HH</p>
-                <p className="text-gray-400 text-xs">Nearest tube: Oxford Circus (Central, Bakerloo, Victoria lines)</p>
-                <div className="mt-3">
+              {/* Google Maps embed */}
+              <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                <iframe
+                  title="Mortgage Adviser London — 207 Regent Street"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9887906837!2d-0.14471922346789!3d51.51239637181765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d4e5ce4b45%3A0x9c4b6b7b7b7b7b7b!2s207%20Regent%20St%2C%20London%20W1B%203HH!5e0!3m2!1sen!2suk!4v1717500000000!5m2!1sen!2suk"
+                  width="100%"
+                  height="280"
+                  style={{ border: 0, display: "block" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <div className="bg-white px-4 py-2 flex items-center justify-between text-sm">
+                  <span className="text-gray-600">207 Regent Street, London W1B 3HH</span>
                   <a
                     href="https://maps.google.com/?q=207+Regent+Street+London+W1B+3HH"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-green-700 hover:text-green-800 text-sm font-medium"
+                    className="text-green-700 hover:text-green-800 font-medium text-xs"
                   >
-                    View on Google Maps →
+                    Open in Maps →
                   </a>
                 </div>
               </div>
+              <p className="text-gray-500 text-xs mt-1">Nearest tube: Oxford Circus (Central, Bakerloo, Victoria lines)</p>
 
               {/* FCA disclaimer */}
               <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800">
