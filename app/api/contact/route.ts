@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { supabaseAdmin } from "@/lib/supabase";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +15,23 @@ export async function POST(request: NextRequest) {
 
     if (!name || !email || !enquiry_type) {
       return NextResponse.json({ ok: false, error: "Missing required fields" }, { status: 400 });
+    }
+
+    // Save to Supabase CRM
+    try {
+      await supabaseAdmin.from("leads").insert([{
+        form_type: "mortgage-adviser-london-contact",
+        name,
+        email,
+        phone: phone || null,
+        mortgage_type: enquiry_type,
+        notes: message || null,
+        source: "mortgageadviser.london",
+        source_page: "/contact",
+        status: "New",
+      }]);
+    } catch (dbErr) {
+      console.error("Supabase error:", dbErr);
     }
 
     const RESEND_API_KEY = process.env.RESEND_API_KEY;
