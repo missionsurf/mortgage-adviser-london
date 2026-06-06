@@ -98,7 +98,8 @@ export async function POST(request: NextRequest) {
 </body>
 </html>`;
 
-      await Promise.all([
+      // Fire and forget — don't block the redirect
+      Promise.all([
         fetch("https://api.resend.com/emails", {
           method: "POST",
           headers: { "Content-Type": "application/json", Authorization: `Bearer ${RESEND_API_KEY}` },
@@ -124,7 +125,7 @@ export async function POST(request: NextRequest) {
       ]);
     }
 
-    return NextResponse.json({ ok: true, message: "Enquiry received" });
+    return NextResponse.redirect(new URL("/thank-you", request.url));
   } catch (error) {
     console.error("Contact form error:", error);
     return NextResponse.json({ ok: false, error: "Failed to process enquiry" }, { status: 500 });
