@@ -144,7 +144,7 @@ export async function POST(request: NextRequest) {
       ]);
     }
 
-    return NextResponse.redirect(new URL("/thank-you", request.url));
+    return NextResponse.redirect(new URL("/thank-you", request.url), 303);
   } catch (error) {
     console.error("Contact form error:", error);
     return NextResponse.json({ ok: false, error: "Failed to process enquiry" }, { status: 500 });
