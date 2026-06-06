@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabaseAdmin } from "@/lib/supabase";
+import { getSupabaseAdmin } from "@/lib/supabase";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +19,8 @@ export async function POST(request: NextRequest) {
 
     // Save to Supabase CRM
     try {
-      await supabaseAdmin.from("leads").insert([{
+      const db = getSupabaseAdmin()
+      if (db) await db.from("leads").insert([{
         form_type: "mortgage-adviser-london-contact",
         name,
         email,
@@ -30,7 +31,7 @@ export async function POST(request: NextRequest) {
         source_page: "/contact",
         status: "New",
       }]);
-    } catch (dbErr) {
+    } catch (dbErr: unknown) {
       console.error("Supabase error:", dbErr);
     }
 
