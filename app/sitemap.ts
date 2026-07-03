@@ -13,6 +13,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }))
 
+  const serviceBorough: MetadataRoute.Sitemap = [
+    'remortgage-advice',
+    'first-time-buyer-advice',
+    'buy-to-let-advice',
+    'self-employed-mortgage-advice',
+    'protection-advice',
+  ].flatMap((svc) =>
+    areas.map((a) => ({
+      url: `${BASE}/${svc}/${a.slug}`,
+      lastModified: LAST_MOD,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }))
+  )
+
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => ({
     url: `${BASE}/blog/${p.slug}`,
     lastModified: new Date(p.date),
@@ -34,6 +49,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Areas
     { url: `${BASE}/areas`, lastModified: LAST_MOD, changeFrequency: 'monthly', priority: 0.8 },
     ...areaPages,
+    // Service × Borough pages
+    ...serviceBorough,
     // Blog
     { url: `${BASE}/blog`, lastModified: LAST_MOD, changeFrequency: 'weekly', priority: 0.8 },
     ...blogPages,
