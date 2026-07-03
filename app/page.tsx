@@ -99,13 +99,13 @@ const services = [
   {
     title: "Expat Mortgage Advice",
     desc: "UK expats and overseas buyers — specialist lenders, foreign income assessment, and international mortgage solutions.",
-    href: "/contact",
+    href: "/expat-mortgage-advice",
     icon: "✈️",
   },
   {
     title: "Protection Advice",
     desc: "Life cover, critical illness, and income protection — ensuring you and your family are protected alongside your mortgage.",
-    href: "/contact",
+    href: "/protection-advice",
     icon: "🛡️",
   },
 ];

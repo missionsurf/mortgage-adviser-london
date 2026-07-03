@@ -27,6 +27,10 @@ export default function Footer() {
               <li><Link href="/remortgage-advice" className="hover:text-white transition-colors">Remortgage Advice</Link></li>
               <li><Link href="/buy-to-let-advice" className="hover:text-white transition-colors">Buy to Let Advice</Link></li>
               <li><Link href="/self-employed-mortgage-advice" className="hover:text-white transition-colors">Self-Employed Advice</Link></li>
+              <li><Link href="/new-build-mortgage-advice" className="hover:text-white transition-colors">New Build Mortgages</Link></li>
+              <li><Link href="/expat-mortgage-advice" className="hover:text-white transition-colors">Expat Mortgages</Link></li>
+              <li><Link href="/protection-advice" className="hover:text-white transition-colors">Protection Advice</Link></li>
+              <li><Link href="/agreement-in-principle" className="hover:text-white transition-colors">Agreement in Principle</Link></li>
             </ul>
           </div>
 
@@ -35,6 +39,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-3">Information</h3>
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="hover:text-white transition-colors">About Roger Cooper</Link></li>
+              <li><Link href="/reviews" className="hover:text-white transition-colors">Client Reviews</Link></li>
               <li><Link href="/areas" className="hover:text-white transition-colors">London Areas</Link></li>
               <li><Link href="/blog" className="hover:text-white transition-colors">Mortgage Advice Blog</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
@@ -59,6 +64,10 @@ export default function Footer() {
               Mon–Fri: 9am–7pm<br />
               Sat: 9am–5pm
             </p>
+            <div className="mt-4 space-y-1 text-xs">
+              <Link href="/privacy-policy" className="block hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="block hover:text-white transition-colors">Terms of Use</Link>
+            </div>
           </div>
         </div>
 
@@ -76,6 +85,10 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} Mortgage International Ltd. All rights reserved. |{" "}
             <Link href="/sitemap.xml" className="hover:text-white">Sitemap</Link>
+            {" | "}
+            <Link href="/privacy-policy" className="hover:text-white">Privacy</Link>
+            {" | "}
+            <Link href="/terms" className="hover:text-white">Terms</Link>
           </p>
         </div>
       </div>
