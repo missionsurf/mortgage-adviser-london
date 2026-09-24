@@ -5,18 +5,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: '*',
-        allow: '/',
-        disallow: [
-          '/api/',
-          '/wp-admin/',
-          '/wp-includes/',
-          '/wp-content/',
-          '/wp-login.php',
-          '/xmlrpc.php',
-        ],
+        disallow: '/',
       },
     ],
-    sitemap: 'https://www.mortgageadviser.london/sitemap.xml',
-    host: 'https://www.mortgageadviser.london',
+    host: 'https://www.mortgageinternational.co.uk',
   }
 }
